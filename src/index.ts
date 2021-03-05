@@ -1,6 +1,8 @@
-import ShareButton from './SharedButton';
+import SharedButtonTwitter from './SharedButtonTwitter';
+import SharedButtonFacebook from './SharedButtonFacebook';
 
-const shareButton = new ShareButton('www.google.com.br')
-shareButton.bind('.btn-twitter', 'twitter')
-shareButton.bind('.btn-facebook', 'facebook')
-shareButton.bind('.btn-linkedin', 'linkedin')
+
+const twitter = new SharedButtonTwitter("btn-twitter","https://twitter.com/azevedoDev")
+const facebook = new SharedButtonFacebook("btn-facebook","https://twitter.com/azevedoDev")
+twitter.bind()
+facebook.bind()
